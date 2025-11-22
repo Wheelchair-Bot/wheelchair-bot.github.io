@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wheelchair Bot - A lightweight, universal tele-robotics kit that turns almost any powered wheelchair into a remotely driven robot">
+    <meta name="keywords" content="wheelchair, robotics, autonomous navigation, accessibility, tele-robotics, remote control">
+    <title>Wheelchair Bot - Universal Tele-Robotics Kit</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="#" class="brand-link">🦽 Wheelchair Bot</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#overview">Overview</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#hardware-requirements">Hardware</a></li>
+                <li><a href="#installation">Installation</a></li>
+                <li><a href="#usage">Usage</a></li>
+                <li><a href="https://github.com/mrhegemon/Wheelchair-Bot" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="content">
+        <div class="container">
+            {{CONTENT}}
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Wheelchair Bot Project. MIT License. Open Source Initiative.</p>
+            <div class="footer-links">
+                <a href="https://github.com/mrhegemon/Wheelchair-Bot" target="_blank" rel="noopener noreferrer">GitHub</a>
+                <a href="https://github.com/mrhegemon/Wheelchair-Bot/issues" target="_blank" rel="noopener noreferrer">Issues</a>
+                <a href="https://github.com/mrhegemon/Wheelchair-Bot/discussions" target="_blank" rel="noopener noreferrer">Discussions</a>
+                <a href="https://deepwiki.com/mrhegemon/Wheelchair-Bot" target="_blank" rel="noopener noreferrer">DeepWiki</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        if (navToggle) {
+            navToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+                navToggle.classList.toggle('active');
+            });
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href !== '#top') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                        // Close mobile menu if open
+                        navMenu.classList.remove('active');
+                        navToggle.classList.remove('active');
+                    }
+                }
+            });
+        });
+
+        // Add copy button to code blocks
+        document.querySelectorAll('pre code').forEach((block) => {
+            const button = document.createElement('button');
+            button.className = 'copy-button';
+            button.textContent = 'Copy';
+            button.addEventListener('click', () => {
+                navigator.clipboard.writeText(block.textContent).then(() => {
+                    button.textContent = 'Copied!';
+                    setTimeout(() => {
+                        button.textContent = 'Copy';
+                    }, 2000);
+                });
+            });
+            block.parentElement.style.position = 'relative';
+            block.parentElement.appendChild(button);
+        });
+    </script>
+</body>
+</html>

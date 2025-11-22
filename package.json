@@ -1,0 +1,23 @@
+{
+  "name": "wheelchair-bot-website",
+  "version": "1.0.0",
+  "description": "Wheelchair Bot - Universal Tele-Robotics Kit Website",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "node build.js && python3 -m http.server 8000",
+    "watch": "nodemon --watch content.md --watch template.html --exec 'npm run build'"
+  },
+  "devDependencies": {
+    "markdown-it": "^14.0.0",
+    "markdown-it-anchor": "^8.6.7",
+    "markdown-it-attrs": "^4.1.6"
+  },
+  "keywords": [
+    "wheelchair",
+    "robotics",
+    "accessibility",
+    "tele-robotics"
+  ],
+  "author": "mrhegemon",
+  "license": "MIT"
+}
