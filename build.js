@@ -9,9 +9,7 @@ const md = new MarkdownIt({
   linkify: true,
   typographer: true,
   breaks: false
-}).use(markdownItAnchor, {
-  permalink: markdownItAnchor.permalink.headerLink()
-});
+}).use(markdownItAnchor);
 
 // Read the markdown content
 const markdownContent = fs.readFileSync('content.md', 'utf8');

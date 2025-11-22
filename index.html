@@ -32,7 +32,7 @@
 
     <main class="content">
         <div class="container">
-            <h1 id="%F0%9F%A6%BD-wheelchair-bot-%F0%9F%A6%BD-universal-tele-robotics-kit" tabindex="-1"><a class="header-anchor" href="#%F0%9F%A6%BD-wheelchair-bot-%F0%9F%A6%BD-universal-tele-robotics-kit">🦽 Wheelchair-Bot 🦽 Universal Tele-Robotics Kit</a></h1>
+            <h1 id="%F0%9F%A6%BD-wheelchair-bot-%F0%9F%A6%BD-universal-tele-robotics-kit" tabindex="-1">🦽 Wheelchair-Bot 🦽 Universal Tele-Robotics Kit</h1>
 <p><img src="https://github.com/user-attachments/assets/897512b5-75d5-4dad-8955-0442d5ffd9d3" alt="Wheelchair Bot"></p>
 <p>A lightweight, universal tele-robotics kit that turns almost any powered wheelchair into a remotely driven robot using commodity parts, an Android phone and/or a Raspberry Pi, and a camera—all accessed through a secure web interface.</p>
 <p>About 1 in 100 people are using a wheelchair. If you include scooters, it’s about 1 in 50. There’s a saying in accessibility, you’re either disabled or not yet disabled. Half of us will spend time in a wheelchair. Everyone in a wheelchair wishes they had an electric wheelchair, but only about 1 in 50 wheelchairs are electric.</p>
@@ -41,9 +41,9 @@
 <p><strong>Extended Docs:</strong></p>
 <p><a href="https://deepwiki.com/mrhegemon/Wheelchair-Bot"><img src="https://deepwiki.com/badge.svg" alt="DeepWiki Badge"></a></p>
 <p><img src="https://github.com/user-attachments/assets/8a9a2082-dc61-4b63-ac50-d87a09e03687" alt="Wheelchair Bot Controller"></p>
-<h2 id="overview" tabindex="-1"><a class="header-anchor" href="#overview">Overview</a></h2>
+<h2 id="overview" tabindex="-1">Overview</h2>
 <p>Wheelchair-Bot is designed as a modular, service-based system that requires minimal hardware and avoids heavy frameworks like ROS. It provides a complete solution for remote wheelchair control with real-time video streaming, responsive controls, and comprehensive safety features.</p>
-<h2 id="features" tabindex="-1"><a class="header-anchor" href="#features">Features</a></h2>
+<h2 id="features" tabindex="-1">Features</h2>
 <ul>
 <li><strong>Universal Compatibility</strong>: Works with most powered wheelchairs using commodity hardware</li>
 <li><strong>Lightweight Stack</strong>: No ROS dependency - uses FastAPI, WebSockets, and WebRTC</li>
@@ -54,9 +54,9 @@
 <li><strong>Network Resilient</strong>: Supports both LTE and Wi-Fi connectivity</li>
 <li><strong>Modular Architecture</strong>: Easy to customize and extend</li>
 </ul>
-<h2 id="system-architecture" tabindex="-1"><a class="header-anchor" href="#system-architecture">System Architecture</a></h2>
+<h2 id="system-architecture" tabindex="-1">System Architecture</h2>
 <p>The system consists of five core services that work together. For a detailed architecture overview, see <a href="docs/architecture.md">docs/architecture.md</a>.</p>
-<h3 id="services" tabindex="-1"><a class="header-anchor" href="#services">Services</a></h3>
+<h3 id="services" tabindex="-1">Services</h3>
 <ol>
 <li>
 <p><strong>teleopd</strong> - Teleoperations daemon (Python FastAPI)</p>
@@ -104,7 +104,7 @@
 </ul>
 </li>
 </ol>
-<h3 id="control-interface" tabindex="-1"><a class="header-anchor" href="#control-interface">Control Interface</a></h3>
+<h3 id="control-interface" tabindex="-1">Control Interface</h3>
 <ul>
 <li><strong>Web Client</strong> - Browser-based control interface
 <ul>
@@ -116,8 +116,8 @@
 </ul>
 </li>
 </ul>
-<h2 id="hardware-requirements" tabindex="-1"><a class="header-anchor" href="#hardware-requirements">Hardware Requirements</a></h2>
-<h3 id="minimum-requirements" tabindex="-1"><a class="header-anchor" href="#minimum-requirements">Minimum Requirements</a></h3>
+<h2 id="hardware-requirements" tabindex="-1">Hardware Requirements</h2>
+<h3 id="minimum-requirements" tabindex="-1">Minimum Requirements</h3>
 <ul>
 <li>
 <p><strong>Computing Platform</strong> (choose one or more):</p>
@@ -153,7 +153,7 @@
 </ul>
 </li>
 </ul>
-<h3 id="optional-components" tabindex="-1"><a class="header-anchor" href="#optional-components">Optional Components</a></h3>
+<h3 id="optional-components" tabindex="-1">Optional Components</h3>
 <ul>
 <li>GPS module for location tracking</li>
 <li>IMU for motion sensing</li>
@@ -163,10 +163,10 @@
 </ul>
 <p>For detailed wheelchair model compatibility and controller interface information, see <a href="docs/wheelchair-support.md">docs/wheelchair-support.md</a>.</p>
 <p><img src="https://github.com/user-attachments/assets/ad9290f7-c03f-4a9f-8108-340539a1fc2b" alt="Wheelchair Bot System"></p>
-<h2 id="installation" tabindex="-1"><a class="header-anchor" href="#installation">Installation</a></h2>
-<h3 id="quick-start" tabindex="-1"><a class="header-anchor" href="#quick-start">Quick Start</a></h3>
+<h2 id="installation" tabindex="-1">Installation</h2>
+<h3 id="quick-start" tabindex="-1">Quick Start</h3>
 <p>For the fastest setup, see <a href="QUICKSTART.md">QUICKSTART.md</a>. For a comprehensive getting started guide, see <a href="docs/getting-started.md">docs/getting-started.md</a>.</p>
-<h3 id="docker-development-environment-(recommended-for-developers)" tabindex="-1"><a class="header-anchor" href="#docker-development-environment-(recommended-for-developers)">Docker Development Environment (Recommended for Developers)</a></h3>
+<h3 id="docker-development-environment-(recommended-for-developers)" tabindex="-1">Docker Development Environment (Recommended for Developers)</h3>
 <p>The easiest way to get started with development is using Docker:</p>
 <pre><code class="language-bash"># Clone the repository
 git clone https://github.com/mrhegemon/Wheelchair-Bot.git
@@ -184,12 +184,12 @@ make docker-shell
 python main.py --mock --verbose
 </code></pre>
 <p>See <a href="docs/docker.md">docs/docker.md</a> for complete Docker documentation.</p>
-<h3 id="detailed-installation" tabindex="-1"><a class="header-anchor" href="#detailed-installation">Detailed Installation</a></h3>
-<h4 id="1.-clone-the-repository" tabindex="-1"><a class="header-anchor" href="#1.-clone-the-repository">1. Clone the Repository</a></h4>
+<h3 id="detailed-installation" tabindex="-1">Detailed Installation</h3>
+<h4 id="1.-clone-the-repository" tabindex="-1">1. Clone the Repository</h4>
 <pre><code class="language-bash">git clone https://github.com/mrhegemon/Wheelchair-Bot.git
 cd Wheelchair-Bot
 </code></pre>
-<h4 id="2.-install-dependencies" tabindex="-1"><a class="header-anchor" href="#2.-install-dependencies">2. Install Dependencies</a></h4>
+<h4 id="2.-install-dependencies" tabindex="-1">2. Install Dependencies</h4>
 <p><strong>On Raspberry Pi:</strong></p>
 <pre><code class="language-bash"># Install system packages
 sudo apt-get update
@@ -209,7 +209,7 @@ pip3 install -r requirements.txt
 <pre><code class="language-bash"># Install with development tools
 pip3 install -e &quot;.[dev]&quot;
 </code></pre>
-<h4 id="3.-configure-services" tabindex="-1"><a class="header-anchor" href="#3.-configure-services">3. Configure Services</a></h4>
+<h4 id="3.-configure-services" tabindex="-1">3. Configure Services</h4>
 <p>Edit configuration files in the <code>config/</code> directory:</p>
 <ul>
 <li><code>teleopd.json</code> - Teleoperations service settings</li>
@@ -217,7 +217,7 @@ pip3 install -e &quot;.[dev]&quot;
 <li><code>network.json</code> - Network and security settings</li>
 <li><code>camera.json</code> - Camera and streaming configuration</li>
 </ul>
-<h4 id="4.-gpio-pin-configuration-(raspberry-pi)" tabindex="-1"><a class="header-anchor" href="#4.-gpio-pin-configuration-(raspberry-pi)">4. GPIO Pin Configuration (Raspberry Pi)</a></h4>
+<h4 id="4.-gpio-pin-configuration-(raspberry-pi)" tabindex="-1">4. GPIO Pin Configuration (Raspberry Pi)</h4>
 <p>Default GPIO pin assignments (BCM mode):</p>
 <table>
 <thead>
@@ -258,10 +258,10 @@ pip3 install -e &quot;.[dev]&quot;
 </tbody>
 </table>
 <p>Customize pin assignments in <code>config/default_config.json</code>.</p>
-<h2 id="usage" tabindex="-1"><a class="header-anchor" href="#usage">Usage</a></h2>
+<h2 id="usage" tabindex="-1">Usage</h2>
 <p>For detailed usage instructions and control methods, see <a href="docs/usage.md">docs/usage.md</a>.</p>
-<h3 id="starting-the-system" tabindex="-1"><a class="header-anchor" href="#starting-the-system">Starting the System</a></h3>
-<h4 id="option-1%3A-start-all-services-(production)" tabindex="-1"><a class="header-anchor" href="#option-1%3A-start-all-services-(production)">Option 1: Start All Services (Production)</a></h4>
+<h3 id="starting-the-system" tabindex="-1">Starting the System</h3>
+<h4 id="option-1%3A-start-all-services-(production)" tabindex="-1">Option 1: Start All Services (Production)</h4>
 <pre><code class="language-bash"># Start all services using the main launcher
 python3 main.py
 </code></pre>
@@ -273,7 +273,7 @@ python3 main.py
 <li>safety-agent (safety monitoring)</li>
 <li>net-agent (network management)</li>
 </ul>
-<h4 id="option-2%3A-start-individual-services-(development)" tabindex="-1"><a class="header-anchor" href="#option-2%3A-start-individual-services-(development)">Option 2: Start Individual Services (Development)</a></h4>
+<h4 id="option-2%3A-start-individual-services-(development)" tabindex="-1">Option 2: Start Individual Services (Development)</h4>
 <pre><code class="language-bash"># Terminal 1: Start teleopd
 python3 -m wheelchair_bot.services.teleopd
 
@@ -286,11 +286,11 @@ python3 -m wheelchair_bot.services.safety_agent
 # Terminal 4: Start network agent (if needed)
 python3 -m wheelchair_bot.services.net_agent
 </code></pre>
-<h4 id="option-3%3A-mock-mode-(testing-without-hardware)" tabindex="-1"><a class="header-anchor" href="#option-3%3A-mock-mode-(testing-without-hardware)">Option 3: Mock Mode (Testing without Hardware)</a></h4>
+<h4 id="option-3%3A-mock-mode-(testing-without-hardware)" tabindex="-1">Option 3: Mock Mode (Testing without Hardware)</h4>
 <pre><code class="language-bash"># Run with mock GPIO and camera
 python3 main.py --mock
 </code></pre>
-<h3 id="web-interface" tabindex="-1"><a class="header-anchor" href="#web-interface">Web Interface</a></h3>
+<h3 id="web-interface" tabindex="-1">Web Interface</h3>
 <p>Once the services are running:</p>
 <ol>
 <li>Open a web browser on any device</li>
@@ -299,7 +299,7 @@ python3 main.py --mock
 <li>Click “Connect” to establish WebRTC connection</li>
 <li>Use the virtual joystick or keyboard to control the wheelchair</li>
 </ol>
-<h3 id="keyboard-controls" tabindex="-1"><a class="header-anchor" href="#keyboard-controls">Keyboard Controls</a></h3>
+<h3 id="keyboard-controls" tabindex="-1">Keyboard Controls</h3>
 <p>When using the web interface:</p>
 <ul>
 <li><strong>W</strong> or <strong>↑</strong> - Move Forward</li>
@@ -309,7 +309,7 @@ python3 main.py --mock
 <li><strong>Space</strong> or <strong>Esc</strong> - Stop (E-Stop)</li>
 <li><strong>+/-</strong> - Adjust Speed</li>
 </ul>
-<h3 id="command-line-options" tabindex="-1"><a class="header-anchor" href="#command-line-options">Command Line Options</a></h3>
+<h3 id="command-line-options" tabindex="-1">Command Line Options</h3>
 <pre><code class="language-bash">python3 main.py [OPTIONS]
 
 Options:
@@ -322,7 +322,7 @@ Options:
   --verbose, -v       Enable verbose logging
   --help, -h          Show help message
 </code></pre>
-<h2 id="project-structure" tabindex="-1"><a class="header-anchor" href="#project-structure">Project Structure</a></h2>
+<h2 id="project-structure" tabindex="-1">Project Structure</h2>
 <pre><code>Wheelchair-Bot/
 ├── wheelchair_bot/              # Main package
 │   ├── services/                # Service implementations
@@ -377,10 +377,10 @@ Options:
 <li>Shared utilities: <a href="packages/shared/README.md">packages/shared/README.md</a></li>
 <li>Test suite: <a href="tests/README.md">tests/README.md</a></li>
 </ul>
-<h2 id="configuration" tabindex="-1"><a class="header-anchor" href="#configuration">Configuration</a></h2>
-<h3 id="service-configuration" tabindex="-1"><a class="header-anchor" href="#service-configuration">Service Configuration</a></h3>
+<h2 id="configuration" tabindex="-1">Configuration</h2>
+<h3 id="service-configuration" tabindex="-1">Service Configuration</h3>
 <p>Each service can be configured via JSON files in the <code>config/</code> directory:</p>
-<h4 id="teleopd.json" tabindex="-1"><a class="header-anchor" href="#teleopd.json">teleopd.json</a></h4>
+<h4 id="teleopd.json" tabindex="-1">teleopd.json</h4>
 <pre><code class="language-json">{
   &quot;host&quot;: &quot;0.0.0.0&quot;,
   &quot;port&quot;: 8000,
@@ -389,7 +389,7 @@ Options:
   &quot;command_timeout&quot;: 1.0
 }
 </code></pre>
-<h4 id="safety.json" tabindex="-1"><a class="header-anchor" href="#safety.json">safety.json</a></h4>
+<h4 id="safety.json" tabindex="-1">safety.json</h4>
 <pre><code class="language-json">{
   &quot;max_speed&quot;: 0.8,
   &quot;max_angular_speed&quot;: 0.8,
@@ -398,7 +398,7 @@ Options:
   &quot;speed_limit_enabled&quot;: true
 }
 </code></pre>
-<h4 id="camera.json" tabindex="-1"><a class="header-anchor" href="#camera.json">camera.json</a></h4>
+<h4 id="camera.json" tabindex="-1">camera.json</h4>
 <pre><code class="language-json">{
   &quot;device&quot;: &quot;/dev/video0&quot;,
   &quot;width&quot;: 1280,
@@ -408,7 +408,7 @@ Options:
   &quot;backend&quot;: &quot;libcamera&quot;
 }
 </code></pre>
-<h4 id="network.json" tabindex="-1"><a class="header-anchor" href="#network.json">network.json</a></h4>
+<h4 id="network.json" tabindex="-1">network.json</h4>
 <pre><code class="language-json">{
   &quot;interfaces&quot;: [&quot;wlan0&quot;, &quot;eth0&quot;, &quot;usb0&quot;],
   &quot;ddns_enabled&quot;: true,
@@ -416,7 +416,7 @@ Options:
   &quot;vpn_enabled&quot;: false
 }
 </code></pre>
-<h3 id="gpio-configuration" tabindex="-1"><a class="header-anchor" href="#gpio-configuration">GPIO Configuration</a></h3>
+<h3 id="gpio-configuration" tabindex="-1">GPIO Configuration</h3>
 <p>Edit <code>config/default_config.json</code> to customize:</p>
 <ul>
 <li>GPIO pin assignments</li>
@@ -424,37 +424,37 @@ Options:
 <li>Safety thresholds</li>
 <li>PWM frequencies</li>
 </ul>
-<h2 id="safety-features" tabindex="-1"><a class="header-anchor" href="#safety-features">Safety Features</a></h2>
+<h2 id="safety-features" tabindex="-1">Safety Features</h2>
 <p>The system includes multiple layers of safety:</p>
-<h3 id="hardware-safety" tabindex="-1"><a class="header-anchor" href="#hardware-safety">Hardware Safety</a></h3>
+<h3 id="hardware-safety" tabindex="-1">Hardware Safety</h3>
 <ul>
 <li><strong>E-Stop Button</strong>: Physical emergency stop (GPIO input)</li>
 <li><strong>Deadman Switch</strong>: Requires continuous operator input</li>
 <li><strong>Watchdog Timer</strong>: Automatic shutdown if service fails</li>
 </ul>
-<h3 id="software-safety" tabindex="-1"><a class="header-anchor" href="#software-safety">Software Safety</a></h3>
+<h3 id="software-safety" tabindex="-1">Software Safety</h3>
 <ul>
 <li><strong>Speed Limiting</strong>: Configurable maximum speeds</li>
 <li><strong>Acceleration Limiting</strong>: Prevents sudden movements</li>
 <li><strong>Command Timeout</strong>: Stops if no commands received</li>
 <li><strong>Input Validation</strong>: All commands validated before execution</li>
 </ul>
-<h3 id="network-safety" tabindex="-1"><a class="header-anchor" href="#network-safety">Network Safety</a></h3>
+<h3 id="network-safety" tabindex="-1">Network Safety</h3>
 <ul>
 <li><strong>Secure WebSocket</strong>: WSS encryption for commands</li>
 <li><strong>Authentication</strong>: Optional password/token protection</li>
 <li><strong>Rate Limiting</strong>: Prevents command flooding</li>
 <li><strong>Connection Monitoring</strong>: Detects and handles disconnections</li>
 </ul>
-<h3 id="safety-override" tabindex="-1"><a class="header-anchor" href="#safety-override">Safety Override</a></h3>
+<h3 id="safety-override" tabindex="-1">Safety Override</h3>
 <pre><code class="language-bash"># Activate emergency stop from command line
 python3 -m wheelchair_bot.safety.estop --trigger
 
 # Reset after E-stop
 python3 -m wheelchair_bot.safety.estop --reset
 </code></pre>
-<h2 id="development" tabindex="-1"><a class="header-anchor" href="#development">Development</a></h2>
-<h3 id="running-tests" tabindex="-1"><a class="header-anchor" href="#running-tests">Running Tests</a></h3>
+<h2 id="development" tabindex="-1">Development</h2>
+<h3 id="running-tests" tabindex="-1">Running Tests</h3>
 <p>Run the complete test suite:</p>
 <pre><code class="language-bash"># All tests
 python3 -m pytest tests/ -v
@@ -468,7 +468,7 @@ python3 -m pytest tests/test_integration.py -v
 # With coverage
 python3 -m pytest --cov=wheelchair_bot tests/
 </code></pre>
-<h3 id="mock-mode-for-development" tabindex="-1"><a class="header-anchor" href="#mock-mode-for-development">Mock Mode for Development</a></h3>
+<h3 id="mock-mode-for-development" tabindex="-1">Mock Mode for Development</h3>
 <p>Test without hardware:</p>
 <pre><code class="language-bash"># Mock GPIO, camera, and network
 python3 main.py --mock --verbose
@@ -480,13 +480,13 @@ python3 main.py --mock-gpio --mock-camera
 python3 -m wheelchair_bot.services.teleopd --mock
 </code></pre>
 <p>For the complete emulator testing framework, see <a href="docs/emulator.md">docs/emulator.md</a>.</p>
-<h3 id="3d-simulator-gui" tabindex="-1"><a class="header-anchor" href="#3d-simulator-gui">3D Simulator GUI</a></h3>
+<h3 id="3d-simulator-gui" tabindex="-1">3D Simulator GUI</h3>
 <p>The project includes a <strong>Three.js based 3D simulator</strong> for visualizing the wheelchair emulator in real-time:</p>
 <pre><code class="language-bash"># Start the emulator with 3D visualization
 PYTHONPATH=src python3 examples/simulator_demo.py
 </code></pre>
 <p>This opens a browser with a 3D view showing the wheelchair’s position, orientation, and movement. See <a href="docs/simulator.md">docs/simulator.md</a> for complete details.</p>
-<h3 id="code-quality" tabindex="-1"><a class="header-anchor" href="#code-quality">Code Quality</a></h3>
+<h3 id="code-quality" tabindex="-1">Code Quality</h3>
 <pre><code class="language-bash"># Format code
 black wheelchair_bot/ tests/
 
@@ -496,14 +496,14 @@ ruff check wheelchair_bot/ tests/
 # Type checking
 mypy wheelchair_bot/
 </code></pre>
-<h3 id="building-documentation" tabindex="-1"><a class="header-anchor" href="#building-documentation">Building Documentation</a></h3>
+<h3 id="building-documentation" tabindex="-1">Building Documentation</h3>
 <pre><code class="language-bash"># Generate API documentation
 python3 -m pdoc wheelchair_bot --output-dir docs/api
 
 # Build documentation site (if using mkdocs)
 mkdocs build
 </code></pre>
-<h3 id="adding-new-features" tabindex="-1"><a class="header-anchor" href="#adding-new-features">Adding New Features</a></h3>
+<h3 id="adding-new-features" tabindex="-1">Adding New Features</h3>
 <p>The modular design makes it easy to extend:</p>
 <ol>
 <li><strong>New Control Interface</strong>: Add to <code>wheelchair_bot/controllers/</code></li>
@@ -512,8 +512,8 @@ mkdocs build
 <li><strong>New Service</strong>: Create in <code>wheelchair_bot/services/</code></li>
 </ol>
 <p>See <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> for detailed guidelines.</p>
-<h2 id="deployment" tabindex="-1"><a class="header-anchor" href="#deployment">Deployment</a></h2>
-<h3 id="running-as-a-system-service" tabindex="-1"><a class="header-anchor" href="#running-as-a-system-service">Running as a System Service</a></h3>
+<h2 id="deployment" tabindex="-1">Deployment</h2>
+<h3 id="running-as-a-system-service" tabindex="-1">Running as a System Service</h3>
 <p>Create a systemd service for automatic startup:</p>
 <pre><code class="language-bash"># Create service file
 sudo nano /etc/systemd/system/wheelchair-bot.service
@@ -539,10 +539,10 @@ WantedBy=multi-user.target
 sudo systemctl start wheelchair-bot
 sudo systemctl status wheelchair-bot
 </code></pre>
-<h3 id="remote-access-setup" tabindex="-1"><a class="header-anchor" href="#remote-access-setup">Remote Access Setup</a></h3>
-<h4 id="option-1%3A-local-network" tabindex="-1"><a class="header-anchor" href="#option-1%3A-local-network">Option 1: Local Network</a></h4>
+<h3 id="remote-access-setup" tabindex="-1">Remote Access Setup</h3>
+<h4 id="option-1%3A-local-network" tabindex="-1">Option 1: Local Network</h4>
 <p>Access via local IP: <code>http://192.168.1.X:8080</code></p>
-<h4 id="option-2%3A-dynamic-dns" tabindex="-1"><a class="header-anchor" href="#option-2%3A-dynamic-dns">Option 2: Dynamic DNS</a></h4>
+<h4 id="option-2%3A-dynamic-dns" tabindex="-1">Option 2: Dynamic DNS</h4>
 <p>Configure in <code>config/network.json</code> for external access:</p>
 <pre><code class="language-json">{
   &quot;ddns_enabled&quot;: true,
@@ -551,7 +551,7 @@ sudo systemctl status wheelchair-bot
   &quot;ddns_token&quot;: &quot;your-token-here&quot;
 }
 </code></pre>
-<h4 id="option-3%3A-vpn%2Ftailscale" tabindex="-1"><a class="header-anchor" href="#option-3%3A-vpn%2Ftailscale">Option 3: VPN/Tailscale</a></h4>
+<h4 id="option-3%3A-vpn%2Ftailscale" tabindex="-1">Option 3: VPN/Tailscale</h4>
 <p>For secure remote access without port forwarding:</p>
 <pre><code class="language-bash"># Install Tailscale
 curl -fsSL https://tailscale.com/install.sh | sh
@@ -559,8 +559,8 @@ sudo tailscale up
 
 # Access via Tailscale network
 </code></pre>
-<h3 id="android-setup-(alternative-platform)" tabindex="-1"><a class="header-anchor" href="#android-setup-(alternative-platform)">Android Setup (Alternative Platform)</a></h3>
-<h4 id="android-as-computing-platform" tabindex="-1"><a class="header-anchor" href="#android-as-computing-platform">Android as Computing Platform</a></h4>
+<h3 id="android-setup-(alternative-platform)" tabindex="-1">Android Setup (Alternative Platform)</h3>
+<h4 id="android-as-computing-platform" tabindex="-1">Android as Computing Platform</h4>
 <p>Use Termux on Android as the computing platform:</p>
 <pre><code class="language-bash"># Install Termux from F-Droid
 # Inside Termux:
@@ -568,14 +568,14 @@ pkg install python clang libusb
 pip install -r requirements.txt
 python main.py --platform android
 </code></pre>
-<h4 id="android-controller-app" tabindex="-1"><a class="header-anchor" href="#android-controller-app">Android Controller App</a></h4>
+<h4 id="android-controller-app" tabindex="-1">Android Controller App</h4>
 <p>For the Android remote control application, see:</p>
 <ul>
 <li><a href="android-controller/README.md">android-controller/README.md</a> - Full documentation</li>
 <li><a href="android-controller/QUICKSTART.md">android-controller/QUICKSTART.md</a> - Quick start guide</li>
 <li><a href="android-controller/IMPLEMENTATION.md">android-controller/IMPLEMENTATION.md</a> - Implementation details</li>
 </ul>
-<h3 id="security-best-practices" tabindex="-1"><a class="header-anchor" href="#security-best-practices">Security Best Practices</a></h3>
+<h3 id="security-best-practices" tabindex="-1">Security Best Practices</h3>
 <ol>
 <li><strong>Change default passwords</strong> in configuration files</li>
 <li><strong>Enable HTTPS</strong> for production use</li>
@@ -588,9 +588,9 @@ sudo ufw enable
 <li><strong>Regular updates</strong>: Keep system and dependencies updated</li>
 <li><strong>Monitor logs</strong>: Check <code>/var/log/wheelchair-bot/</code> regularly</li>
 </ol>
-<h2 id="troubleshooting" tabindex="-1"><a class="header-anchor" href="#troubleshooting">Troubleshooting</a></h2>
-<h3 id="common-issues" tabindex="-1"><a class="header-anchor" href="#common-issues">Common Issues</a></h3>
-<h4 id="connection-problems" tabindex="-1"><a class="header-anchor" href="#connection-problems">Connection Problems</a></h4>
+<h2 id="troubleshooting" tabindex="-1">Troubleshooting</h2>
+<h3 id="common-issues" tabindex="-1">Common Issues</h3>
+<h4 id="connection-problems" tabindex="-1">Connection Problems</h4>
 <p><strong>Cannot connect to web interface</strong></p>
 <ul>
 <li>Verify services are running: <code>systemctl status wheelchair-bot</code></li>
@@ -605,7 +605,7 @@ sudo ufw enable
 <li>Test with browser console open (F12) for errors</li>
 <li>Ensure camera permissions are granted</li>
 </ul>
-<h4 id="hardware-issues" tabindex="-1"><a class="header-anchor" href="#hardware-issues">Hardware Issues</a></h4>
+<h4 id="hardware-issues" tabindex="-1">Hardware Issues</h4>
 <p><strong>GPIO Permission Errors</strong></p>
 <pre><code class="language-bash"># Add user to gpio group
 sudo usermod -a -G gpio $USER
@@ -631,7 +631,7 @@ gst-launch-1.0 v4l2src ! autovideosink  # USB camera
 # Check permissions
 sudo usermod -a -G video $USER
 </code></pre>
-<h4 id="software-issues" tabindex="-1"><a class="header-anchor" href="#software-issues">Software Issues</a></h4>
+<h4 id="software-issues" tabindex="-1">Software Issues</h4>
 <p><strong>Service won’t start</strong></p>
 <pre><code class="language-bash"># Check logs
 journalctl -u wheelchair-bot -n 50
@@ -649,7 +649,7 @@ pip3 install -r requirements.txt --upgrade
 <li>Close bandwidth-heavy applications</li>
 <li>Check CPU usage: <code>htop</code></li>
 </ul>
-<h3 id="getting-help" tabindex="-1"><a class="header-anchor" href="#getting-help">Getting Help</a></h3>
+<h3 id="getting-help" tabindex="-1">Getting Help</h3>
 <ol>
 <li>Check the <a href="docs/">documentation</a></li>
 <li>Review <a href="https://github.com/mrhegemon/Wheelchair-Bot/issues">existing issues</a></li>
@@ -664,8 +664,8 @@ pip3 install -r requirements.txt --upgrade
 </ul>
 </li>
 </ol>
-<h2 id="performance-tuning" tabindex="-1"><a class="header-anchor" href="#performance-tuning">Performance Tuning</a></h2>
-<h3 id="optimize-video-streaming" tabindex="-1"><a class="header-anchor" href="#optimize-video-streaming">Optimize Video Streaming</a></h3>
+<h2 id="performance-tuning" tabindex="-1">Performance Tuning</h2>
+<h3 id="optimize-video-streaming" tabindex="-1">Optimize Video Streaming</h3>
 <pre><code class="language-json">// config/camera.json - Low latency preset
 {
   &quot;width&quot;: 640,
@@ -675,7 +675,7 @@ pip3 install -r requirements.txt --upgrade
   &quot;bitrate&quot;: 500000
 }
 </code></pre>
-<h3 id="reduce-cpu-usage" tabindex="-1"><a class="header-anchor" href="#reduce-cpu-usage">Reduce CPU Usage</a></h3>
+<h3 id="reduce-cpu-usage" tabindex="-1">Reduce CPU Usage</h3>
 <pre><code class="language-bash"># Use hardware encoding (Raspberry Pi)
 echo &quot;h264_v4l2m2m&quot; | sudo tee -a /etc/modules
 
@@ -683,13 +683,13 @@ echo &quot;h264_v4l2m2m&quot; | sudo tee -a /etc/modules
 sudo systemctl disable bluetooth
 sudo systemctl disable cups
 </code></pre>
-<h3 id="network-optimization" tabindex="-1"><a class="header-anchor" href="#network-optimization">Network Optimization</a></h3>
+<h3 id="network-optimization" tabindex="-1">Network Optimization</h3>
 <pre><code class="language-bash"># Increase network buffer sizes
 sudo sysctl -w net.core.rmem_max=26214400
 sudo sysctl -w net.core.wmem_max=26214400
 </code></pre>
-<h2 id="api-reference" tabindex="-1"><a class="header-anchor" href="#api-reference">API Reference</a></h2>
-<h3 id="websocket-api-(control-commands)" tabindex="-1"><a class="header-anchor" href="#websocket-api-(control-commands)">WebSocket API (Control Commands)</a></h3>
+<h2 id="api-reference" tabindex="-1">API Reference</h2>
+<h3 id="websocket-api-(control-commands)" tabindex="-1">WebSocket API (Control Commands)</h3>
 <p>Connect to <code>ws://hostname:8080/ws</code></p>
 <p><strong>Send movement command:</strong></p>
 <pre><code class="language-json">{
@@ -707,7 +707,7 @@ sudo sysctl -w net.core.wmem_max=26214400
   &quot;acceleration_limit&quot;: 1.0
 }
 </code></pre>
-<h3 id="rest-api-(status-and-config)" tabindex="-1"><a class="header-anchor" href="#rest-api-(status-and-config)">REST API (Status and Config)</a></h3>
+<h3 id="rest-api-(status-and-config)" tabindex="-1">REST API (Status and Config)</h3>
 <p><strong>Get system status:</strong></p>
 <pre><code class="language-bash">GET http://hostname:8000/api/status
 </code></pre>
@@ -740,9 +740,9 @@ Content-Type: application/json
 <pre><code class="language-bash">POST http://hostname:8000/api/emergency-stop
 </code></pre>
 <p>See <a href="docs/api.md">docs/api.md</a> for complete API documentation.</p>
-<h2 id="contributing" tabindex="-1"><a class="header-anchor" href="#contributing">Contributing</a></h2>
+<h2 id="contributing" tabindex="-1">Contributing</h2>
 <p>We welcome contributions! See <a href="CONTRIBUTING.md">CONTRIBUTING.md</a> for guidelines.</p>
-<h3 id="development-workflow" tabindex="-1"><a class="header-anchor" href="#development-workflow">Development Workflow</a></h3>
+<h3 id="development-workflow" tabindex="-1">Development Workflow</h3>
 <ol>
 <li>Fork the repository</li>
 <li>Create a feature branch: <code>git checkout -b feature/my-feature</code></li>
@@ -753,7 +753,7 @@ Content-Type: application/json
 <li>Push to branch: <code>git push origin feature/my-feature</code></li>
 <li>Create Pull Request</li>
 </ol>
-<h3 id="code-standards" tabindex="-1"><a class="header-anchor" href="#code-standards">Code Standards</a></h3>
+<h3 id="code-standards" tabindex="-1">Code Standards</h3>
 <ul>
 <li>Follow PEP 8 style guide</li>
 <li>Add docstrings to all functions/classes</li>
@@ -761,21 +761,21 @@ Content-Type: application/json
 <li>Write tests for new features</li>
 <li>Update documentation</li>
 </ul>
-<h2 id="license" tabindex="-1"><a class="header-anchor" href="#license">License</a></h2>
+<h2 id="license" tabindex="-1">License</h2>
 <p>This project is licensed under the MIT License - see the <a href="LICENSE">LICENSE</a> file for details.</p>
-<h2 id="acknowledgments" tabindex="-1"><a class="header-anchor" href="#acknowledgments">Acknowledgments</a></h2>
+<h2 id="acknowledgments" tabindex="-1">Acknowledgments</h2>
 <ul>
 <li>Built with FastAPI, WebRTC, and modern web technologies</li>
 <li>Inspired by the need for accessible, affordable robotic assistance</li>
 <li>Community contributions and feedback</li>
 </ul>
-<h2 id="support" tabindex="-1"><a class="header-anchor" href="#support">Support</a></h2>
+<h2 id="support" tabindex="-1">Support</h2>
 <ul>
 <li><strong>Documentation</strong>: <a href="docs/">docs/</a></li>
 <li><strong>Issues</strong>: <a href="https://github.com/mrhegemon/Wheelchair-Bot/issues">GitHub Issues</a></li>
 <li><strong>Discussions</strong>: <a href="https://github.com/mrhegemon/Wheelchair-Bot/discussions">GitHub Discussions</a></li>
 </ul>
-<h2 id="roadmap" tabindex="-1"><a class="header-anchor" href="#roadmap">Roadmap</a></h2>
+<h2 id="roadmap" tabindex="-1">Roadmap</h2>
 <p><em>Coming soon: Future plans and features in development</em></p>
 
         </div>
